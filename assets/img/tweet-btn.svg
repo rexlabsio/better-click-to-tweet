@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="23px" viewBox="0 0 56 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50.0%" y="-46.2%" width="200.0%" height="223.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0281080163 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Rex-Blog-Tweetable-7" transform="translate(-424.000000, -526.000000)">
+            <g id="Group" transform="translate(428.000000, 529.000000)">
+                <g id="twitter-(1)" filter="url(#filter-1)" stroke="#3B4450" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16,0.00743501347 C15.3035527,0.496805308 14.5324421,0.871095065 13.7163636,1.11589037 C12.8191706,0.0882419844 11.37336,-0.272131692 10.0960592,0.213516015 C8.81875852,0.699163722 7.98167292,1.92752665 8,3.28933225 L8,4.01381287 C5.40411987,4.08086529 2.9469275,2.84882666 1.45454545,0.731915639 C1.45454545,0.731915639 -1.45454545,7.25224127 5.09090909,10.1501638 C3.59311096,11.1629633 1.80884139,11.6707974 0,11.599125 C6.54545455,15.2215282 14.5454545,11.599125 14.5454545,3.26759783 C14.5447848,3.06579639 14.5253073,2.86449275 14.4872727,2.66627891 C15.2295296,1.93708415 15.753329,1.01642844 16,0.00743501347 Z" id="Shape"></path>
+                </g>
+                <text id="TWEET" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="8" font-weight="bold" fill="#3B4450">
+                    <tspan x="24" y="11">TWEET</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

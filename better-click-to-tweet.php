@@ -161,14 +161,17 @@ function bctt_shortcode( $atts ) {
             	
             	}
             	    
-                    if ( !is_feed() ) {
-                
-                        return "<div class='bctt-click-to-tweet'><span class='bctt-ctt-text'><a href='https://twitter.com/intent/tweet?text=" . urlencode($short) . $handle_code . $bcttURL."' target='_blank'" . $rel . ">".$short." </a></span><a href='https://twitter.com/intent/tweet?text=" . urlencode($short) . $handle_code . $bcttURL . "' target='_blank' class='bctt-ctt-btn'" . $rel . ">" . $bcttBttn . "</a></div>";
-                    } else {
-                        
-                        return "<hr /><p><em>" . $short . "</em><br /><a href='https://twitter.com/intent/tweet?text=" . urlencode($short) . $handle_code . $bcttURL . "' target='_blank' class='bctt-ctt-btn'" . $rel . ">" . $bcttBttn . "</a><br /><hr />";
-	        	
-	        		};
+    // This is where the main text & "Click to tweet" sub text is.
+    if (!is_feed()) {
+        $content  = "<img src='/wp-content/plugins/better-click-to-tweet/assets/img/quote.svg' /><br />";
+        $content .= "<div class='bctt-click-to-tweet'>";
+        $content .= "<span class='bctt-ctt-text'><a href='https://twitter.com/intent/tweet?text=" . urlencode($short) . $handle_code . $bcttURL . "' target='_blank' " . $rel . ">" . $short . " </a></span><br>";
+        $content .= "<div class='bctt-ctt-btn-row'><a href='https://twitter.com/intent/tweet?text=" . urlencode($short) . $handle_code . $bcttURL . "' target='_blank' class='bctt-ctt-btn' " . $rel . "><img src='/wp-content/plugins/better-click-to-tweet/assets/img/tweet-btn.svg' /></a></div>";
+        $content .= "</div>";
+        return $content;
+    } else {
+        return "<hr /><p><em>" . $short . "</em><br /><a href='https://twitter.com/intent/tweet?text=" . urlencode($short) . $handle_code . $bcttURL . "' target='_blank' class='bctt-ctt-btn'" . $rel . ">" . $bcttBttn . "</a><br /><hr />";
+    }
 }
 
 add_shortcode('bctt', 'bctt_shortcode');
